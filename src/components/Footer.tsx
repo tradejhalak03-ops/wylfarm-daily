@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Milk, Instagram, Facebook, Twitter, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
+import wylfarmLogo from "@/assets/wylfarm-logo.png";
 
 const Footer = () => {
   return (
@@ -8,32 +8,22 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <Milk className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-2xl font-heading font-bold text-background">
-                Wyl<span className="text-primary">Farm</span>
-              </span>
+            <div className="mb-4">
+              <img src={wylfarmLogo} alt="WylFarm Logo" className="h-16 w-auto object-contain brightness-0 invert" />
             </div>
             <p className="text-background/60 max-w-sm mb-6">
               Nature's freshness, delivered daily. Pure farm-fresh dairy products from our pastures to your table.
             </p>
             <div className="flex gap-3">
-              {[
-                { Icon: Instagram, label: "Instagram" },
-                { Icon: Facebook, label: "Facebook" },
-                { Icon: Twitter, label: "Twitter" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/wylfarm?igsh=aThrM3Z0dG15MXky&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
@@ -56,10 +46,10 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-background mb-4">Contact WylFarm</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-primary" /> hello@wylfarm.com
+                <Mail className="w-4 h-4 text-primary" /> Support@wylfarm.in
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-primary" /> +91-XXXXXXXXXX
+                <Phone className="w-4 h-4 text-primary" /> 8439366904
               </li>
             </ul>
           </div>

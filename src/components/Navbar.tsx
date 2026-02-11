@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Milk } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import wylfarmLogo from "@/assets/wylfarm-logo.png";
 
 const navLinks = [
   { label: "Products", href: "#products" },
@@ -28,14 +29,9 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Milk className="w-5 h-5 text-primary-foreground" />
-          </div>
-          <span className="text-2xl font-heading font-bold text-foreground">
-            Wyl<span className="text-primary">Farm</span>
-          </span>
+      <div className="container mx-auto flex items-center justify-between py-3">
+        <a href="#" className="flex items-center group">
+          <img src={wylfarmLogo} alt="WylFarm Logo" className="h-14 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform" />
         </a>
 
         {/* Desktop */}

@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
+import productFreshMilk from "@/assets/product-fresh-milk.png";
+import productSkimmedMilk from "@/assets/product-skimmed-milk.png";
+import productMilkPouch from "@/assets/product-milk-pouch.png";
+import productGhee from "@/assets/product-ghee.png";
+import productPaneer from "@/assets/product-paneer.png";
+import productDahi from "@/assets/product-dahi.png";
 
 const products = [
-  { name: "Fresh Whole Milk", sizes: "1L / 2L", price: "₹60", desc: "Rich, creamy whole milk straight from our farm", emoji: "🥛" },
-  { name: "Skimmed Milk", sizes: "1L / 2L", price: "₹55", desc: "Light and healthy with all the goodness", emoji: "🥛" },
-  { name: "Chocolate Milk", sizes: "500ml", price: "₹45", desc: "Kids' favorite — rich chocolate meets fresh milk", emoji: "🍫" },
-  { name: "Strawberry Milk", sizes: "500ml", price: "₹45", desc: "Sweet strawberry bliss in every sip", emoji: "🍓" },
-  { name: "Fresh Cream", sizes: "250ml", price: "₹80", desc: "Thick, velvety cream for your kitchen", emoji: "🍦" },
-  { name: "Paneer", sizes: "200g / 500g", price: "₹90", desc: "Soft, fresh cottage cheese made daily", emoji: "🧀" },
-  { name: "Yogurt", sizes: "400g", price: "₹50", desc: "Probiotic-rich creamy yogurt", emoji: "🥣" },
-  { name: "Ghee", sizes: "500ml", price: "₹350", desc: "Pure desi ghee with aromatic richness", emoji: "✨" },
+  { name: "Fresh Whole Milk", sizes: "1L / 2L", price: "₹60", desc: "Rich, creamy whole milk straight from our farm", image: productFreshMilk },
+  { name: "Skimmed Milk", sizes: "1L / 2L", price: "₹55", desc: "Light and healthy with all the goodness", image: productSkimmedMilk },
+  { name: "Milk Pouch", sizes: "500ml / 1L", price: "₹30", desc: "Convenient pouch packaging for daily use", image: productMilkPouch },
+  { name: "Desi Cow Ghee", sizes: "500ml / 1L", price: "₹350", desc: "Pure desi ghee with aromatic richness", image: productGhee },
+  { name: "Paneer", sizes: "200g / 500g", price: "₹90", desc: "Soft, fresh cottage cheese made daily", image: productPaneer },
+  { name: "Dahi", sizes: "400g / 1kg", price: "₹50", desc: "Probiotic-rich creamy dahi", image: productDahi },
 ];
 
 const Products = () => {
@@ -34,7 +38,7 @@ const Products = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, i) => (
             <motion.div
               key={product.name}
@@ -46,8 +50,12 @@ const Products = () => {
               onMouseLeave={() => setHoveredIdx(null)}
               className="glass-card rounded-2xl p-6 hover-lift cursor-pointer group"
             >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
-                {product.emoji}
+              <div className="w-full h-48 mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-muted/20">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-44 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
               <h3 className="font-heading font-semibold text-lg mb-1">{product.name}</h3>
               <p className="text-muted-foreground text-sm mb-3">{product.desc}</p>
