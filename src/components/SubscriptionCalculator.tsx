@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { Calculator } from "lucide-react";
 
 const products = [
-  { name: "Whole Milk (1L)", price: 60 },
+  { name: "Fresh Whole Milk (1L)", price: 60 },
   { name: "Skimmed Milk (1L)", price: 55 },
-  { name: "Yogurt (400g)", price: 50 },
+  { name: "Milk Pouch (500ml)", price: 30 },
+  { name: "Desi Cow Ghee (500ml)", price: 350 },
   { name: "Paneer (200g)", price: 90 },
-  { name: "Ghee (500ml)", price: 350 },
+  { name: "Dahi (400g)", price: 50 },
 ];
 
 const SubscriptionCalculator = () => {
