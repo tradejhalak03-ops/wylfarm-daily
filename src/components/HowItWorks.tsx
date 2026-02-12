@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", icon: "🛒", title: "Choose Your Products", desc: "Browse our fresh dairy selection and pick your favorites." },
-  { num: "02", icon: "📅", title: "Set Your Schedule", desc: "Daily, alternate days, or weekly — you choose the frequency." },
-  { num: "03", icon: "🚛", title: "Doorstep Delivery", desc: "We deliver fresh before sunrise, every single time." },
+  { num: "01", icon: "🛒", title: "Choose WylFarm Products", desc: "Browse our fresh dairy selection — milk, ghee, paneer & more." },
+  { num: "02", icon: "📅", title: "Set Your Schedule", desc: "Order via deliv.bell — daily, alternate days, or weekly." },
+  { num: "03", icon: "🚛", title: "Doorstep Delivery", desc: "deliv.bell delivers fresh WylFarm dairy before sunrise." },
   { num: "04", icon: "🔄", title: "Swap & Repeat", desc: "Return empty bottles, get fresh ones. Zero waste!" },
 ];
 
@@ -22,7 +22,7 @@ const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-background/60 max-w-md mx-auto">
-            Getting farm-fresh dairy has never been easier.
+            WylFarm dairy, delivered by deliv.bell — simple and fresh.
           </p>
         </motion.div>
 

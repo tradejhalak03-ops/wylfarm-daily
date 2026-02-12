@@ -1,4 +1,4 @@
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone, Facebook, Youtube } from "lucide-react";
 import wylfarmLogo from "@/assets/wylfarm-logo.png";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
               <img src={wylfarmLogo} alt="WylFarm Logo" className="h-16 w-auto object-contain brightness-0 invert" />
             </div>
             <p className="text-background/60 max-w-sm mb-6">
-              Nature's freshness, delivered daily. Pure farm-fresh dairy products from our pastures to your table.
+              WylFarm — pure dairy from our pastures. deliv.bell — delivered fresh to your doorstep.
             </p>
             <div className="flex gap-3">
               <a
@@ -24,6 +24,24 @@ const Footer = () => {
               >
                 <Instagram className="w-4 h-4" />
               </a>
+              <a
+                href="https://www.facebook.com/wylfarm"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.youtube.com/@wylfarm"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+              >
+                <Youtube className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
@@ -31,7 +49,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-background mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              {["Products", "How It Works", "About Us", "Testimonials"].map((link) => (
+              {["Products", "How It Works", "App", "About Us", "Testimonials"].map((link) => (
                 <li key={link}>
                   <a href={`#${link.toLowerCase().replace(/ /g, "")}`} className="hover:text-primary transition-colors">
                     {link}
@@ -56,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/40">
-          <p>© 2025 WylFarm. All rights reserved.</p>
+          <p>© 2025 WylFarm. Dairy delivered by deliv.bell.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-background transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-background transition-colors">Terms of Service</a>

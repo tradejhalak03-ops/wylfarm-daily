@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Why WylFarm", href: "#why" },
   { label: "How It Works", href: "#how" },
   { label: "Testimonials", href: "#testimonials" },
+  { label: "App", href: "#app" },
   { label: "About", href: "#about" },
 ];
 

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const reasons = [
-  { icon: "🌅", title: "Delivered Before 7 AM", desc: "Start your mornings with farm-fresh milk, right at your doorstep." },
-  { icon: "🐄", title: "No Preservatives", desc: "100% natural dairy — no additives, no shortcuts." },
+  { icon: "🌅", title: "Delivered Before 7 AM", desc: "deliv.bell brings WylFarm dairy to your doorstep before sunrise." },
+  { icon: "🐄", title: "No Preservatives", desc: "WylFarm — 100% natural dairy, no additives, no shortcuts." },
   { icon: "♻️", title: "Eco-Friendly Bottles", desc: "Reusable glass bottles to reduce your footprint." },
-  { icon: "📱", title: "Easy Ordering", desc: "Order, pause, or customize your delivery in seconds." },
-  { icon: "💯", title: "Quality Guarantee", desc: "We stand behind every drop. Not happy? Full refund." },
-  { icon: "🌾", title: "Sustainable Farming", desc: "Ethical practices, happy cows, and a greener planet." },
+  { icon: "📱", title: "Easy Ordering", desc: "Order WylFarm via deliv.bell — pause or customize in seconds." },
+  { icon: "💯", title: "Quality Guarantee", desc: "WylFarm stands behind every drop. Not happy? Full refund." },
+  { icon: "🌾", title: "Sustainable Farming", desc: "WylFarm — ethical practices, happy cows, a greener planet." },
 ];
 
 const WhyChoose = () => {

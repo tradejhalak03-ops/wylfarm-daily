@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const testimonials = [
-  { name: "Priya Sharma", city: "Mumbai", text: "WylFarm has changed my mornings! The milk is so fresh and creamy!", avatar: "🧑‍🦱" },
-  { name: "Rajesh Kumar", city: "Delhi", text: "Finally, a dairy service I can trust. WylFarm never disappoints!", avatar: "👨" },
-  { name: "Anita Desai", city: "Bangalore", text: "Their paneer is incredible — you can taste the farm freshness!", avatar: "👩" },
-  { name: "Arjun Mehta", city: "Pune", text: "Love the glass bottles and the quality. WylFarm is doing it right!", avatar: "🧑" },
-  { name: "Sneha Patel", city: "Ahmedabad", text: "My kids refuse any other milk now. Thank you WylFarm!", avatar: "👩‍🦰" },
+  { name: "Dr. Priya Sharma", city: "Bulandshahr", text: "WylFarm has changed my mornings! The milk is so fresh and creamy!", avatar: "🧑‍🦱" },
+  { name: "D.M. Rajesh Kumar", city: "Bulandshahr", text: "Finally, a dairy service I can trust. WylFarm never disappoints!", avatar: "👨" },
+  { name: "Anita Desai", city: "Bulandshahr", text: "Their paneer is incredible — you can taste the farm freshness!", avatar: "👩" },
+  { name: "Er.Arjun Mehta", city: "Bulandshahr", text: "Love the glass bottles and the quality. WylFarm is doing it right!", avatar: "🧑" },
+  { name: "Sneha Patel", city: "Bulandshahr", text: "My kids refuse any other milk now. Thank you WylFarm!", avatar: "👩‍🦰" },
 ];
 
 const Testimonials = () => {

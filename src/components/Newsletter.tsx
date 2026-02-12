@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
+import { toast } from "sonner";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
@@ -8,7 +9,12 @@ const Newsletter = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (email.trim()) {
+      setSubmitted(true);
+      toast.success("Welcome to the WylFarm family!", {
+        description: "Check your inbox for a warm welcome from us.",
+      });
+    }
   };
 
   return (

@@ -64,8 +64,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg"
           >
-            Pure, farm-fresh dairy products from our pastures to your table.
-            Nature's freshness, delivered daily.
+            Pure WylFarm dairy — farm-fresh milk, ghee & more — delivered to your doorstep by deliv.bell.
           </motion.p>
 
           <motion.div
@@ -96,7 +95,7 @@ const Hero = () => {
             className="mt-12 flex items-center gap-8 text-sm text-muted-foreground"
           >
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🌅</span> Before 7 AM delivery
+              <span className="text-2xl">🌅</span> Before 7 AM delivery by deliv.bell
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">♻️</span> Eco-friendly packaging

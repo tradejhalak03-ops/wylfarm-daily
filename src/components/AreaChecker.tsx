@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, CheckCircle, XCircle } from "lucide-react";
 
-const availableCities = ["mumbai", "delhi", "bangalore", "pune", "ahmedabad", "hyderabad", "chennai", "kolkata", "jaipur", "lucknow"];
+const availableCities = ["mumbai", "delhi", "bangalore", "pune", "ahmedabad", "hyderabad", "chennai", "kolkata", "jaipur", "lucknow", "bulandshahr"];
+const availablePincodes = ["203001"];
 
 const AreaChecker = () => {
   const [pincode, setPincode] = useState("");
@@ -10,9 +11,11 @@ const AreaChecker = () => {
 
   const checkArea = () => {
     if (!pincode.trim()) return;
-    // Simple demo logic — check if input matches known cities or valid pincode pattern
     const input = pincode.toLowerCase().trim();
-    const isAvailable = availableCities.some((c) => input.includes(c)) || /^[1-5]\d{5}$/.test(input);
+    const isAvailable =
+      availableCities.some((c) => input.includes(c)) ||
+      availablePincodes.includes(input) ||
+      /^[1-5]\d{5}$/.test(input);
     setResult(isAvailable ? "available" : "unavailable");
   };
 
@@ -26,15 +29,15 @@ const AreaChecker = () => {
         >
           <MapPin className="w-8 h-8 text-secondary mx-auto mb-2" />
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-2">
-            Is WylFarm in <span className="text-gradient">Your Area?</span>
+            Is deliv.bell in <span className="text-gradient">Your Area?</span>
           </h2>
-          <p className="text-muted-foreground mb-6">Enter your city or pincode to check availability</p>
+          <p className="text-muted-foreground mb-6">Enter your city or pincode to check if we deliver WylFarm dairy to you</p>
         </motion.div>
 
         <div className="flex gap-2">
           <input
             type="text"
-            placeholder="e.g. Mumbai or 400001"
+            placeholder="e.g. Mumbai, Bulandshahr or 203001"
             value={pincode}
             onChange={(e) => { setPincode(e.target.value); setResult(null); }}
             onKeyDown={(e) => e.key === "Enter" && checkArea()}
@@ -58,11 +61,11 @@ const AreaChecker = () => {
           >
             {result === "available" ? (
               <>
-                <CheckCircle className="w-5 h-5" /> Yes! WylFarm delivers to your area 🎉
+                <CheckCircle className="w-5 h-5" /> Yes! deliv.bell delivers WylFarm dairy to your area 🎉
               </>
             ) : (
               <>
-                <XCircle className="w-5 h-5" /> We're not here yet, but we're expanding soon!
+                <XCircle className="w-5 h-5" /> deliv.bell isn't here yet, but we're expanding soon!
               </>
             )}
           </motion.div>

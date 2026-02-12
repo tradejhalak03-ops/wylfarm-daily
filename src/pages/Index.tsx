@@ -4,6 +4,7 @@ import Products from "@/components/Products";
 import WhyChoose from "@/components/WhyChoose";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
+import AppDownload from "@/components/AppDownload";
 import SubscriptionCalculator from "@/components/SubscriptionCalculator";
 import AreaChecker from "@/components/AreaChecker";
 import About from "@/components/About";
@@ -20,6 +21,7 @@ const Index = () => {
       <WhyChoose />
       <HowItWorks />
       <Testimonials />
+      <AppDownload />
       <SubscriptionCalculator />
       <AreaChecker />
       <About />

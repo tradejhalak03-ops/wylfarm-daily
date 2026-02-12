@@ -9,12 +9,12 @@ import productPaneer from "@/assets/product-paneer.png";
 import productDahi from "@/assets/product-dahi.png";
 
 const products = [
-  { name: "Fresh Whole Milk", sizes: "1L / 2L", price: "₹60", desc: "Rich, creamy whole milk straight from our farm", image: productFreshMilk },
+  { name: "Fresh Whole Milk", sizes: "1L / 2L", price: "₹85", desc: "Rich, creamy whole milk straight from our farm", image: productFreshMilk },
   { name: "Skimmed Milk", sizes: "1L / 2L", price: "₹55", desc: "Light and healthy with all the goodness", image: productSkimmedMilk },
-  { name: "Milk Pouch", sizes: "500ml / 1L", price: "₹30", desc: "Convenient pouch packaging for daily use", image: productMilkPouch },
-  { name: "Desi Cow Ghee", sizes: "500ml / 1L", price: "₹350", desc: "Pure desi ghee with aromatic richness", image: productGhee },
+  { name: "Milk Pouch", sizes: "500ml / 1L", price: "₹35", desc: "Convenient pouch packaging for daily use", image: productMilkPouch },
+  { name: "Desi Cow Ghee", sizes: "500ml / 1L", price: "₹450", desc: "Pure desi ghee with aromatic richness", image: productGhee },
   { name: "Paneer", sizes: "200g / 500g", price: "₹90", desc: "Soft, fresh cottage cheese made daily", image: productPaneer },
-  { name: "Dahi", sizes: "400g / 1kg", price: "₹50", desc: "Probiotic-rich creamy dahi", image: productDahi },
+  { name: "Dahi", sizes: "500g / 1kg", price: "₹75", desc: "Probiotic-rich creamy dahi", image: productDahi },
 ];
 
 const Products = () => {
@@ -34,7 +34,7 @@ const Products = () => {
             Farm-Fresh <span className="text-gradient">Goodness</span>
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto">
-            Handpicked dairy products crafted with love, delivered fresh every morning.
+            WylFarm dairy — handpicked, crafted with love, delivered fresh by deliv.bell every morning.
           </p>
         </motion.div>
 

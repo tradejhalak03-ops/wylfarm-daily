@@ -113,6 +113,21 @@
   .section-padding {
     @apply py-16 md:py-24 px-4 md:px-8;
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .snappable {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-center {
+    scroll-snap-align: center;
+  }
 }
 
 /* Smooth scrolling */

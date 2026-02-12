@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Calculator } from "lucide-react";
 
 const products = [
-  { name: "Fresh Whole Milk (1L)", price: 60 },
+  { name: "Fresh Whole Milk (1L)", price: 85 },
   { name: "Skimmed Milk (1L)", price: 55 },
-  { name: "Milk Pouch (500ml)", price: 30 },
-  { name: "Desi Cow Ghee (500ml)", price: 350 },
+  { name: "Milk Pouch (500ml)", price: 35 },
+  { name: "Desi Cow Ghee (500ml)", price: 450 },
   { name: "Paneer (200g)", price: 90 },
-  { name: "Dahi (400g)", price: 50 },
+  { name: "Dahi (400g)", price: 35 },
 ];
 
 const SubscriptionCalculator = () => {
@@ -47,7 +47,7 @@ const SubscriptionCalculator = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold">
             Subscription <span className="text-gradient">Calculator</span>
           </h2>
-          <p className="text-muted-foreground mt-2">Estimate your monthly WylFarm costs</p>
+          <p className="text-muted-foreground mt-2">Estimate your monthly WylFarm dairy costs</p>
         </motion.div>
 
         <div className="glass-card rounded-2xl p-6 md:p-8">

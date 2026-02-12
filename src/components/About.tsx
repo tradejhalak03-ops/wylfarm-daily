@@ -24,10 +24,9 @@ const About = () => {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg leading-relaxed mb-8"
           >
-            At WylFarm, we believe in keeping it simple and pure. Our dairy products come straight
-            from our well-maintained farm, where our cows graze on natural pastures. We're committed
-            to delivering the freshest dairy products while maintaining sustainable and ethical
-            farming practices.
+            WylFarm is our dairy brand — pure milk, ghee, paneer & more from our farms. We partner with
+            deliv.bell to bring you the freshest products at your doorstep. Sustainable farming,
+            ethical practices, and nature's goodness in every drop.
           </motion.p>
 
           <motion.div
